@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Time Zone Converter</title>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <script src="./script.js"></script>
+    
+    <!-- Select 2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <!-- Select 2 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="ProjectStyle.css">
+</head>
+<body>
+
+    <div class="main">
+
+        <h1>Time Zone Converter</h1>
+
+        <h3>Convert from your local time to the desired timezone from the list below.</h3>
+
+        <div class="container">
+
+            <div class="conversion-container">
+
+                <label for="fromTimeZone">From Time Zone:</label><br>
+                <select class="select-timezone" id="fromTimeZone"></select><br>
+
+                <br><label for="toTimeZone">To Time Zone:</label><br>
+                <select class="select-timezone" id="toTimeZone"></select><br><br>
+            
+                <label for="inputTime">Enter Time:</label>
+
+            </div>
+
+            <div class="convert-time">
+                <input type="datetime-local" id="inputTime"><br><br>
+            </div>
+
+                <button class="but" onclick="convertTime();">Convert Time</button>&nbsp;&nbsp;
+                <button class="but" onclick="goBack();">Back to Menu</button>
+        
+            <div class="result-container" id="result">
+                
+            </div>
+
+        </div>
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

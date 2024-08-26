@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Email Generator</title>
+    <link rel="stylesheet" href="ProjectStyle.css">
+    <script src="ProjectJS.js"></script>
+</head>
+<body>
+    <h1>Generate an Email</h1>
+    <h3>By filling out the areas below, you will have the framework <br>for a pre-made email.</h3><br>
+<div class="centre">
+    <label for="yourName">Your Name:</label><br>
+    <input type="text" id="yourName" name="yourName" autocomplete="on"><br><br>
+    <label for="recipientName">Name of Recipient:</label><br>
+    <input type="text" id="recipientName" name="recipientName"><br><br>
+
+   
+    <label>Email Topics:</label><br>
+    
+    <input type="checkbox" name="emailTopic" value="Meeting Requests/Invitations"> Meeting Requests/Invitations<br>
+    <input type="checkbox" name="emailTopic" value="Follow-ups"> Follow-ups<br>
+    <input type="checkbox" name="emailTopic" value="Customer Support/Service"> Customer Support/Service<br>
+    <input type="checkbox" name="emailTopic" value="Invoices/Billing"> Invoices/Billing<br>
+    <input type="checkbox" name="emailTopic" value="Networking/Introductions"> Networking/Introductions<br><br>
+    
+    <label for="yourEmail">Your Generated Email:</label><br>
+    <textarea id="emailContent" placeholder="Your email will appear here" rows="4" cols="50"></textarea><br>
+    <input type="button" class="miniButton" value="Copy" onclick="copyMail();"/><br><br>
+
+    <input type="button" class="but" value="Generate Email" onclick="generateEmail();"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="button" class="but" value="Back to Menu" onclick="goBack();"/>
+</div>
+
+
+    <script>
+       function copyMail() {
+            var copyText = document.getElementById('emailContent');
+
+            // Ensure the text area has focus
+            copyText.focus();
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); // For mobile devices
+
+            // Try to copy the text
+            try {
+                // For modern browsers
+                navigator.clipboard.writeText(copyText.value).then(function() {
+                    alert("Copied the text: " + copyText.value);
+                }).catch(function(err) {
+                    // Fallback for older browsers
+                    document.execCommand('copy');
+                    alert("Copied the text: " + copyText.value);
+                });
+            } catch (err) {
+                // Fallback for older browsers
+                document.execCommand('copy');
+                alert("Copied the text: " + copyText.value);
+            }
+        } 
+    </script>
+   
+</body>
+</html>
