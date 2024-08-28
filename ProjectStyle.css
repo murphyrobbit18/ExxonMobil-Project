@@ -37,6 +37,10 @@ a{
     font-size: 15px;
 }
 
+.result-container {
+    font-family: "Courier New", "monospace";
+}
+
 .font{
     font-family: "Courier New", "monospace";
 }
