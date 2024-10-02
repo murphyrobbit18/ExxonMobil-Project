@@ -1,4 +1,4 @@
-## Lab 2 Pseudocode
+## Lab 2 Pseudo-code
 
     get user to select which design they want to test
 
@@ -29,5 +29,5 @@
         overwise
             shows the reading of the sensor
 
-    if the user does not choose either option
+    otherwise
         tell them that what they chose is not an option
