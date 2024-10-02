@@ -1,4 +1,4 @@
-## Lab 2 Pseudo-code
+## Lab 2 Pseudocode
 
     get user to select which design they want to test
 
