@@ -6,7 +6,7 @@
         reads the light sensor
         the button being pressed or not is recorded 
 
-        if the light sensor is below 370 or the button is pressed
+        if the light sensor is below 315 or the button is pressed
             the LED turns on
 
         overwise
@@ -15,7 +15,7 @@
     if user selects design #2
         reads the sound sensor
 
-        if the sensor reads over 430
+        if the sensor reads over 526
 
             shows the reading of the sensor
             prompts the user for the password
