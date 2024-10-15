@@ -18,7 +18,7 @@ sampleEight = collection of sample eight
   
 sampleNine = collection of sample nine
   
-sampleTen = collection of sample ten
+sampleTen = collection of sample ten<br>
 
   
 sampleList = [sampleOne, sampleTwo, sampleThree, sampleFour, sampleFive, sampleSix, sampleSeven, sampleEight, sampleNine, sampleTen]
