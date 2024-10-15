@@ -1,6 +1,6 @@
 ## Lab 4 Pseudocode
   
-sampleOne = collection of sample one
+>sampleOne = collection of sample one
   
 sampleTwo = collection of sample two
   
