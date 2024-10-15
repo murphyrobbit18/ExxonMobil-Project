@@ -1,15 +1,15 @@
 ## Lab 4 Pseudocode
 
-
-sampleOne = "collection of sample one"
-sampleTwo = "collection of sample two"
-sampleThree = "collection of sample three"
-sampleFour = "collection of sample four"
-sampleFive = "collection of sample five"
-sampleSix = "collection of sample six"
-sampleSeven = "collection of sample seven"
-sampleEight = "collection of sample eight"
-sampleNine = "collection of sample nine"
-sampleTen = "collection of sample ten"
+```python
+sampOne = "collection of sample one"
+sampTwo = "collection of sample two"
+sampThree = "collection of sample three"
+sampFour = "collection of sample four"
+sampFive = "collection of sample five"
+sampSix = "collection of sample six"
+sampSeven = "collection of sample seven"
+sampEight = "collection of sample eight"
+sampNine = "collection of sample nine"
+sampTen = "collection of sample ten"
                 
-sampleList = [sampleOne, sampleTwo, sampleThree, sampleFour, sampleFive, sampleSix, sampleSeven, sampleEight, sampleNine, sampleTen]
+sampleList = [sampOne, sampTwo, sampThree, sampFour, sampFive, sampSix, sampSeven, sampEight, sampNine, sampTen]
